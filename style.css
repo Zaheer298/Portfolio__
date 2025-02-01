@@ -1,0 +1,551 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ========== Main Container ========== */
+.main_container {
+    padding: 1rem 3rem 1rem 3rem;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    border-bottom: 2px solid #5626bd;
+    padding-bottom: 10px;
+
+}
+
+header::before {
+    content: ' ';
+    width: 40%;
+    height: 70vh;
+    border: 40px solid #e4ddf2;
+    border-radius: 50%;
+    position: absolute;
+    left: -16rem;
+    top: -13rem;
+    z-index: -1;
+}
+
+header .logo {
+    font-size: 30px;
+    color: #000;
+}
+
+header nav ul {
+    position: absolute;
+    right: 10rem;
+    top: 0.5rem;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.active a {
+    color: #5626bd;
+}
+
+header .icon {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+header .icon i {
+    background-color: #5626bd;
+    color: aliceblue;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* ========== Hero Section ========== */
+.hero_section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    position: relative;
+}
+
+.hero_section .contect_hero {
+    width: 50%;
+    position: absolute;
+    left: 5rem;
+    top: 4rem;
+    font-family: monospace;
+    line-height: 50px;
+}
+
+.hero_section .contect_hero h1 {
+    font-size: 25px;
+    color: #4b2c8d;
+    padding: 10px 0px 20px 0px;
+}
+
+.hero_section .contect_hero h2 {
+    width: 80%;
+    font-size: 75px;
+    line-height: 60px;
+    padding: 10px 0px 30px 0px;
+}
+
+.hero_section .contect_hero h3 {
+    width: 70%;
+    height: 8vh;
+    align-items: center;
+    background: #5626bd;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.hero_section .contect_hero button {
+    width: 20%;
+    height: 6vh;
+    align-items: center;
+    background: #5626bd;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+}
+
+.hero_section .image_hero {
+    width: 50%;
+    position: relative;
+
+}
+
+.hero_section .image_hero img {
+    width: 70%;
+    position: absolute;
+    left: 44rem;
+    top: 1.5rem;
+}
+
+.hero_section .image_hero pre {
+    width: 100%;
+    position: absolute;
+    left: 55rem;
+    top: 12rem;
+    color: white;
+}
+
+.hero_section::before {
+    content: ' ';
+    width: 30%;
+    height: 50vh;
+    background-color: #3c1a6e;
+    position: absolute;
+    right: -3rem;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hero_section::after {
+    content: ' ';
+    width: 35%;
+    height: 70vh;
+    background-color: #803de3;
+    border-radius: 50%;
+    position: absolute;
+    right: 5rem;
+    bottom: 6rem;
+    z-index: -1;
+}
+
+/* < !--================About Section===================--> */
+.about_section {
+    width: 100%;
+    height: 100vh;
+    background-color: #3c1a6e;
+    position: relative;
+    top: -1rem;
+}
+
+.about_section .about_image img {
+    position: absolute;
+    left: 6rem;
+    top: 6rem;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.about_section .about_contact {
+    width: 50%;
+    position: absolute;
+    right: 8rem;
+    top: 7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about_section .about_contact h1 {
+    font-size: 40px;
+    color: #855ac4;
+}
+
+.about_section .about_contact h2 {
+    color: white;
+    opacity: 80%;
+    font-size: 40px;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.about_section .about_contact p {
+    color: white;
+    opacity: 50%;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.about_section .about_contact .about_experience {
+    display: flex;
+}
+
+.about_section .about_contact .about_experience h3 {
+    color: #855ac4;
+    font-size: 40px;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.about_section .about_contact .about_experience span {
+    width: 20%;
+    color: #fff;
+    font-size: 15px;
+    opacity: 80%;
+    padding: 1.4rem 0rem 1rem 1rem;
+}
+
+.about_section .about_contact pre {
+    position: absolute;
+    right: -8rem;
+    top: -1rem;
+    color: #e4ddf2;
+    opacity: 50%;
+}
+
+/* < !--================   Service Section    ===================--> */
+.service_section {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 2rem 8rem 2rem 8rem;
+}
+
+.service_section .heading_service {
+    display: flex;
+    position: relative;
+    top: 2rem;
+    justify-content: space-evenly;
+}
+
+.service_section .heading_service h1 {
+    width: 30%;
+    color: #3c1a6e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.service_section .heading_service p {
+    width: 50%;
+    color: #000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.service_icon {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: space-around;
+    background-color: #3c1a6e;
+    border-radius: 10px;
+    position: relative;
+    top: 6rem;
+    align-items: center;
+    line-height: 30px;
+}
+
+.service_icon .service i {
+    padding: 30px;
+    background-color: #fff;
+    font-size: 50px;
+    display: block;
+    border-radius: 10px;
+    color: #3c1a6e;
+
+}
+
+.service_icon .service i:hover {
+    background-color: #3c1a6e;
+    color: #fff;
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+    border: 1px solid #fff;
+}
+
+.service_icon .service span {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #e4ddf2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* < !--================  Project Work Section    ===================--> */
+.project_work_section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.project_work_section::before {
+    content: ' ';
+    width: 60%;
+    height: 80vh;
+    border: 40px solid #e4ddf2;
+    border-radius: 50%;
+    position: absolute;
+    left: -16rem;
+    top: -0rem;
+    z-index: -1;
+}
+
+.project_work_section .main_project {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    position: absolute;
+    bottom: 7rem;
+}
+
+.project_work_section h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 3rem;
+    color: #3c1a6e;
+}
+
+.project_work_section .one_project {
+    width: 20%;
+    height: 55vh;
+    background-color: white;
+    border: 3px solid white;
+    box-shadow: 0 0 1px 2px #3c1a6e;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+
+}
+
+.project_work_section .one_project img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.project_work_section .one_project p {
+    width: 60%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project_work_section .one_project button {
+    padding: 0.7rem 2rem 0.7rem 2rem;
+    align-items: center;
+    background: #794fd4;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+
+
+.project_work_section .bg_color {
+    width: 100%;
+    height: 50vh;
+    background: #3c1a6e;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: -1;
+}
+
+/* < !--================  Skill Section    ===================--> */
+.skill_section {
+    width: 100%;
+    height: 100vh;
+    /* background: pink; */
+    position: relative;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.skill_image img {
+    width: 37%;
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    left: 4rem;
+}
+
+.experience_skill {
+    width: 12%;
+    height: 10vh;
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #3c1a6e;
+    color: #fff;
+    left: 22rem;
+    top: 15rem;
+    z-index: 1000;
+    position: absolute;
+    display: flex;
+
+}
+
+.skill_image::before {
+    content: ' ';
+    width: 300px;
+    height: 300px;
+    background-color: #803de3;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 100;
+    left: 10rem;
+    top: 5rem;
+}
+
+.skill_image::after {
+    content: ' ';
+    width: 50%;
+    height: 90vh;
+    border: 40px solid #e4ddf2;
+    border-radius: 50%;
+    position: absolute;
+    left: -16rem;
+    bottom: -13rem;
+    z-index: -1;
+}
+
+.skill_contact {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 10rem;
+}
+
+.skill_contact h1 {
+    width: 60%;
+    color: #803de3;
+    padding-bottom: 20px;
+}
+
+.skill_contact p {
+    width: 80%;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+.icon_skill {
+    line-height: 30px;
+}
+
+.icon_skill i {
+    background: #3c1a6e;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+/* < !--================  Skill Section    ===================--> */
+.courses_section {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.left_image_courses {
+    width: 50%;
+}
+
+.left_image_courses h1 {
+    width: 70%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #794fd4;
+    padding: 2rem 0rem 0rem 10rem;
+}
+
+.left_image_courses img {
+    width: 50%;
+    position: absolute;
+    bottom: 3rem;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.right_contect_courses {
+    width: 50%;
+    position: absolute;
+    right: -3rem;
+    line-height: 20px;
+}
+
+.right_contect_courses i {
+    background: #3c1a6e;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.right_contect_courses span {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.right_contect_courses p {
+    width: 80%;
+}
+
+/* < !--================  Footer ===================--> */
+footer {
+    background-color: #3c1a6e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
